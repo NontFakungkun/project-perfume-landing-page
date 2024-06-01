@@ -7,7 +7,7 @@ const PopularProductsCard = ({ imgURL, name, price, rating, desc }) => {
   return (
     <div className='flex flex-1 flex-col w-full max-sm:w-full'>
         <img src={imgURL} alt={name} onClick={() => setOpen(true)} 
-        className='w-[280px] h-[280px] rounded-xl cursor-pointer' />
+        className='w-[280px] h-[280px] rounded-xl cursor-pointer transform transition-transform duration-300 hover:scale-105' />
         <div className='mt-4 flex justify-start gap-2.5'>
             <img src={star} alt="rating" width={24} height={24}/>
             <p className='text-xl leading-normal text-slate-gray'>({rating})</p>
